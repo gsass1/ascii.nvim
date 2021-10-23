@@ -35,11 +35,11 @@ class NvimHelper:
 
     def get_selection_begin(self):
         arr = self.nvim.eval("getpos(\"'<\")")[1:3]
-        return Position(arr[0], arr[1])
+        return Position(arr[0] - 1, arr[1] - 1)
 
     def get_selection_end(self):
         arr = self.nvim.eval("getpos(\"'>\")")[1:3]
-        return Position(arr[0], arr[1])
+        return Position(arr[0] - 1, arr[1] - 1)
 
 @pynvim.plugin
 class AsciiPlugin(object):
