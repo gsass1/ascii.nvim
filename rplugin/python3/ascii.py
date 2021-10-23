@@ -20,6 +20,9 @@ class NvimHelper:
     def __init__(self, nvim):
         self.nvim = nvim
 
+    def get_setting(self, name):
+        return self.nvim.eval("get(g:, '{}')".format(name))
+
     def get_visual_mode(self):
         return str(self.nvim.eval("visualmode()"))
 
@@ -40,6 +43,13 @@ class NvimHelper:
     def get_selection_end(self):
         arr = self.nvim.eval("getpos(\"'>\")")[1:3]
         return Position(arr[0] - 1, arr[1] - 1)
+
+    def fill(self, row, l_offset, fill_chars, text):
+        line = self.nvim.current.buffer[row]
+        if len(line) < l_offset + len(text):
+            line = line + fill_chars * (l_offset + len(text) - len(line))
+        line = line[:l_offset] + text + line[(l_offset + len(text)):]
+        self.nvim.current.buffer[row] = line
 
 @pynvim.plugin
 class AsciiPlugin(object):
