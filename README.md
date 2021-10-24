@@ -2,7 +2,7 @@
 
 A plugin to help spice up your text documentation, for NeoVim using the [remote plugin feature](https://pynvim.readthedocs.io/en/latest/usage/remote-plugins.html).
 
-![Demonstration](https://user-images.githubusercontent.com/4589491/138596209-8888fb93-d5f9-4222-a58f-c4b6dda351c3.gif)
+![Demonstration](https://user-images.githubusercontent.com/4589491/138596861-8fc26d75-d96b-4a2e-a20c-88ee81c77d31.gif)
 
 **Disclaimer:** very WIP! Expect things to break and stuff not to work flawlessly until I can release a stable version.
 
