@@ -1,3 +1,3 @@
 # ascii.nvim
 
-![Demonstration](https://user-images.githubusercontent.com/4589491/138567288-baa739f7-09b5-4671-a8fa-d3fe08ab6df4.gif)
+![Demonstration](https://user-images.githubusercontent.com/4589491/138596209-8888fb93-d5f9-4222-a58f-c4b6dda351c3.gif)
