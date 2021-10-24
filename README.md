@@ -41,7 +41,7 @@ let g:ascii_corner_char = "+"
 
 ## Commands
 ### Box
-Pput an ASCII box around a selection.
+Put an ASCII box around a selection.
 
 Usage: `:Box --hpadding=HPADDING --vpadding=VPADDING`
 
